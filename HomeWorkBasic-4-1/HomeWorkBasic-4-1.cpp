@@ -44,6 +44,7 @@ int main()
             addressMass[i] = Address(city, street, house, apatment);
         }
         std::ofstream fOut("out.txt");
+        fOut << addressCount << "\n";
         for (int i{ addressCount - 1 }; i >= 0; --i) {
             fOut << addressMass[i].Out();
         }
